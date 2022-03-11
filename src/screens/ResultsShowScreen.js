@@ -31,7 +31,7 @@ const ResultsShowScreen = ({ navigation }) => {
       <View style={styles.container}>
         <Text style={styles.text}>{result.name}</Text>
         <Text style={styles.info}>{result.location.display_address}</Text>
-        <Text style={styles.info}>{result.phone}</Text>
+        <Text style={styles.info}>{result.phone.slice(1)}</Text>
        
         <FlatList
           keyExtractor={photo => photo}
